@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial: Estruturas de Repetição em JavaScript</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a2b3c; 
+            color: #f4f4f9; 
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #004466; 
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: #66ccff; 
+            font-size: 1.8rem;
+        }
+
+        .example-code {
+            background-color: #2c3e50; 
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            color: #ecf0f1; 
+            margin: 10px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #004466; 
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Tutorial: Estruturas de Repetição em JavaScript</h1>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>Introdução</h2>
+            <p>Estruturas de repetição são fundamentais para realizar tarefas que envolvem repetição de código. Em JavaScript, temos três principais tipos de repetição: <strong>for</strong>, <strong>while</strong> e <strong>do...while</strong>.</p>
+        </section>
+
+        <section>
+            <h2>Estrutura <code>for</code></h2>
+            <p>A estrutura <code>for</code> em JavaScript é uma das formas mais utilizadas para executar repetidamente um bloco de código, quando sabemos o número exato de iterações que precisamos fazer. Esse tipo de laço é ideal para cenários onde temos uma condição bem definida e controlada, como contar até um número específico ou iterar sobre uma coleção de itens.</p>
+            <div class="example-code">
+                <pre><code>for (let i = 1; i <= 10; i++) {
+    console.log(i);
+}</code></pre>
+            </div>
+            <p>Este código imprime os números de 1 a 10.</p>
+        </section>
+
+        <section>
+            <h2>Estrutura <code>while</code></h2>
+            <p>A estrutura de repetição <code>while</code> é um dos tipos mais comuns de laços de repetição em muitas linguagens de programação. Ela é usada para executar um bloco de código repetidamente enquanto uma condição for verdadeira. Ou seja, enquanto a condição especificada no início for satisfeita, o código dentro do bloco será executado, e quando a condição se tornar falsa, o laço será encerrado.</p>
+            <div class="example-code">
+                <pre><code>let i = 1;
+while (i <= 10) {
+    console.log(i);
+    i++;
+}</code></pre>
+            </div>
+            <p>Este código imprime os números de 1 a 10 utilizando o <code>while</code>.</p>
+        </section>
+
+        <section>
+            <h2>Estrutura <code>do...while</code></h2>
+            <p>A estrutura de repetição <code>do...while</code> é muito similar ao while, mas com uma diferença importante no momento em que a condição de repetição é verificada. A principal característica do do...while é que ele executa o bloco de código pelo menos uma vez, independentemente de a condição ser verdadeira ou falsa inicialmente. Após a primeira execução, a condição é verificada, e, se for verdadeira, o bloco de código será executado novamente.</p>
+            <div class="example-code">
+                <pre><code>let numero;
+do {
+    numero = parseInt(prompt('Digite um número maior que 5:'));
+} while (numero <= 5);</code></pre>
+            </div>
+            <p>Este código vai pedir para o usuário digitar um número até que ele seja maior que 5.</p>
+        </section>
+
+        <section>
+            <h2>Exercícios</h2>
+            <ul>
+                <li>Crie um código que liste todos os números de 1 a 100, mas somente os números divisíveis por 5.</li>
+                <li>Escreva um código que peça para o usuário inserir um número até que ele insira um número ímpar.</li>
+                <li>Crie um código que continue pedindo um número até que o usuário insira um número múltiplo de 3.</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2024 Tutorial sobre Estruturas de Repetição em JavaScript</p>
+    </footer>
+
+</body>
+
+</html>
